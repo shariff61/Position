@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-frame {
+            height: 470px;
+            width: 400px;
+            border: 5px solid indianred;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .photo-frame .photo img {
+            width: 100%;
+        }
+
+        .photo-detail {
+            position: absolute;
+            top: 0px;
+            height: 270px;
+            width: 400px;
+            display: none;
+
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+        }
+
+        /* .photo-frame:hover .photo img {
+            transform: scale(2);
+            transition: transform 3s; */
+        }
+
+        .sun {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            top: 0%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>its bach photo</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/beach.jpg" alt="">
+
+                <!-- </div> -->
+                <!-- <div class="photo-detail">
+                <h3>i will make a good picture</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam porro explicabo, nam eos fuga
+                    ducimus nihil repellat doloribus incidunt blanditiis ut iure aut dolore beatae! A eum quod
+                    reprehenderit!</p> -->
+
+            </div>
+            <div class="sun">sharif</div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

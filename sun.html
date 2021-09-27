@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-frame {
+            height: 500px;
+            width: 500px;
+            border: 5px solid red;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .photo-frame .photo img {
+            width: 100%;
+        }
+
+        .sun {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 40px orange;
+            /* border: 2px solid blue; */
+            background-color: orange;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            /* transform: translate(left 300px);
+            transition: transform; */
+        }
+
+        .photo-frame:hover .sun {
+            transform: translate(150px);
+            transition: transform 5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/beach.jpg" alt="" srcset="">
+
+            </div>
+            <div class="sun"></div>
+        </div>
+
+    </section>
+</body>
+
+</html>
